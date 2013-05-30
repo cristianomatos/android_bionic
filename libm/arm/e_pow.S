@@ -101,7 +101,9 @@
 #define vmov_f32            fconsts
 #define vmovne_f64          fconstdne
 
-#define KRAIT_NO_AAPCS_VFP_MODE
+#if defined(KRAIT_NEON_OPTIMIZATION) 	
+#define KRAIT_NO_AAPCS_VFP_MODE	
+#endif
 
 ENTRY(pow)
 #if defined(KRAIT_NO_AAPCS_VFP_MODE)
