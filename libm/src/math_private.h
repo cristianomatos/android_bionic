@@ -258,7 +258,7 @@ cpackl(long double x, long double y)
 
 /* fdlibm kernel function */
 #if defined(__ARM_NEON__) 	
-double»	__full_ieee754_pow(double,double);	
+double	__full_ieee754_pow(double,double);	
 #endif
 #if defined(KRAIT_NEON_OPTIMIZATION)
 double	__full_ieee754_pow(double,double);
